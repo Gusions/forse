@@ -4,12 +4,18 @@
 
 # Forse
 
-**Forse** is a personal-finance app for people who want to self-host their own money
-tracker, own their data, and adapt the app to their own country instead of a
-US-centric default. It started as a fork of [Maybe Finance](https://github.com/maybe-finance/maybe)
-(a great open-source personal finance app whose original team stopped maintaining it),
-localized for Italy — but the underlying changes are a useful starting point for
-anyone who wants to fork it again for their own market, language, or workflow.
+**Forse** is a self-hosted personal-finance app built for the **Italian market**: fully
+Italian interface, account and asset types that match how money actually works in Italy
+(pension funds, Italian bank accounts, mortgages, Italian credit cards, TFR, etc.), and a
+free AI assistant instead of a paid-only one. It's a fork of
+[Maybe Finance](https://github.com/maybe-finance/maybe) (a great open-source personal
+finance app whose original team stopped maintaining it), adapted end-to-end for Italy
+rather than just translated.
+
+If you're not in Italy, the same approach — and the same changes, file by file — works as a
+starting point for adapting it to any other market; see
+["Forking this for your own country or use case"](#forking-this-for-your-own-country-or-use-case)
+below.
 
 > [!NOTE]
 > This project is **not affiliated with, or endorsed by, Maybe Finance Inc.** "Maybe" remains
@@ -19,24 +25,24 @@ anyone who wants to fork it again for their own market, language, or workflow.
 > [final release](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0)); this fork is
 > maintained independently.
 
-## Why fork it
+## Why this exists
 
 Maybe Finance is built around the US market: dollars, 401(k), IRA, HSA, US bank
-integrations. If you want to actually use it as a day-to-day money tool outside the US,
-you typically need:
+integrations. None of that maps cleanly onto how personal finance actually works in Italy.
+To use it as a real day-to-day money tool here, it needed:
 
-- a fully localized UI, not just a translated subset;
-- account types and categories that match your own market (pension funds, local bank
-  accounts, mortgages, local credit cards, etc.) instead of US-specific concepts;
+- a fully localized UI, not just a translated subset — no English left anywhere;
+- account types and categories that match the Italian market (pension funds, Italian bank
+  accounts, mortgages, Italian credit cards, TFR, etc.) instead of US-specific concepts like
+  401(k)/IRA/HSA;
 - an AI assistant (auto-categorization, chat) that doesn't require a paid OpenAI
   subscription to be useful;
 - a self-hosted setup you can run locally via Docker without depending on paid third-party
   services;
-- your own name and branding, so you're not running a stranger's trademark on your own
-  machine.
+- its own name and branding, so it's not running a stranger's trademark on your machine.
 
-This repo shows one way to do all of that for Italy. Fork it again, swap the locale files,
-account types, and branding for your own country, and you have a working starting point.
+This repo is that: a ready-to-run, Italian-market version of Maybe Finance. If you're in a
+different country, the same changes are still a useful template — see below.
 
 ## What's different from upstream Maybe
 
