@@ -1,6 +1,6 @@
 <%= content_for :page_title, "Crea nuova chiave API" %>
 
-<%= settings_section title: "Crea nuova chiave API", subtitle: "Genera una nuova chiave API per accedere ai tuoi dati Maybe in modo programmatico." do %>
+<%= settings_section title: "Crea nuova chiave API", subtitle: "Genera una nuova chiave API per accedere ai tuoi dati Forse in modo programmatico." do %>
   <%= styled_form_with model: @api_key, url: settings_api_key_path, class: "space-y-4" do |form| %>
     <%= form.text_field :name,
         placeholder: "es. La mia app di budget, Portfolio Tracker",

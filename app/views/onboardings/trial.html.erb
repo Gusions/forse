@@ -17,7 +17,7 @@
     <%= image_tag "logo-color.png", class: "w-16 mb-6" %>
 
     <p class="text-xl lg:text-3xl text-primary font-display font-medium">
-      Prova Maybe gratis per 14 giorni.
+      Prova Forse gratis per 14 giorni.
     </p>
 
     <h2 class="text-xl lg:text-3xl font-display text-secondary font-medium mb-2">
@@ -25,13 +25,13 @@
     </h2>
 
     <p class="text-sm text-secondary text-center mb-8">
-      Avviando il periodo di prova attivi il tuo account Maybe. Non dovrai inserire alcun dato di pagamento.
+      Avviando il periodo di prova attivi il tuo account Forse. Non dovrai inserire alcun dato di pagamento.
     </p>
 
     <div class="w-full">
       <% if Current.family.can_start_trial? %>
         <%= render DS::Button.new(
-        text: "Prova Maybe per 14 giorni",
+        text: "Prova Forse per 14 giorni",
         href: subscription_path,
         full_width: true,
         data: { turbo: false }
@@ -65,7 +65,7 @@
       <div class="space-y-12">
         <div class="space-y-1.5 text-sm">
           <p class="text-primary font-medium">Oggi</p>
-          <p class="text-secondary">Ottieni l'accesso gratuito a Maybe per 14 giorni</p>
+          <p class="text-secondary">Ottieni l'accesso gratuito a Forse per 14 giorni</p>
         </div>
 
         <div class="space-y-1.5 text-sm">
@@ -75,7 +75,7 @@
 
         <div class="space-y-1.5 text-sm">
           <p class="text-primary font-medium">Tra 14 giorni (<%= 14.days.from_now.strftime("%d %B") %>)</p>
-          <p class="text-secondary">Il periodo di prova termina &mdash; abbonati per continuare a usare Maybe</p>
+          <p class="text-secondary">Il periodo di prova termina &mdash; abbonati per continuare a usare Forse</p>
         </div>
       </div>
     </div>
@@ -107,7 +107,7 @@
 
       <div class="flex flex-col gap-4 items-center">
         <%= render "chats/ai_avatar" %>
-        <p class="text-sm text-primary text-center">Accesso illimitato e chat con Maybe AI</p>
+        <p class="text-sm text-primary text-center">Accesso illimitato e chat con Forse AI</p>
       </div>
 
       <div class="flex flex-col gap-4 items-center">

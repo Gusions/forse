@@ -1,14 +1,18 @@
-<img width="1190" alt="maybe_hero" src="https://github.com/user-attachments/assets/5ed08763-a9ee-42b2-a436-e05038fcf573" />
+<p align="center">
+  <img src="app/assets/images/logomark.svg" width="160" alt="Forse logo" />
+</p>
 
-# Maybe Personal App (fork personalizzato per l'Italia)
+# Forse
 
-Questo repository è un **fork personale** di [Maybe Finance](https://github.com/maybe-finance/maybe),
-un'app di finanza personale open source. Non è un progetto generico: è la mia installazione privata,
-adattata e localizzata per gestire i miei conti reali in Italia.
+**Forse** è un **fork personale** di [Maybe Finance](https://github.com/maybe-finance/maybe),
+un'app di finanza personale open source. Non è un progetto generico: è la mia installazione
+privata, adattata, rinominata e localizzata per gestire i miei conti reali in Italia.
 
 > [!NOTE]
-> Questo fork **non è affiliato con, né approvato da, Maybe Finance Inc.** "Maybe" è un marchio di
-> Maybe Finance Inc. Il progetto originale non è più mantenuto attivamente (vedi la loro
+> Questo fork **non è affiliato con, né approvato da, Maybe Finance Inc.** "Maybe" resta un
+> marchio di Maybe Finance Inc.; questo progetto usa un nome e un logo propri (Forse) proprio per
+> evitare qualsiasi confusione con il prodotto originale. Il progetto originale non è più
+> mantenuto attivamente (vedi la loro
 > [release finale](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0)); questo fork
 > continua a essere usato e modificato in autonomia, per uso personale.
 
@@ -23,10 +27,13 @@ americane. Per usarlo davvero come strumento di finanza personale in Italia serv
 - un assistente AI (categorizzazione automatica, chat) che non richieda per forza un abbonamento
   a pagamento OpenAI;
 - un'istanza self-hosted via Docker, utilizzabile in locale senza dipendere da servizi esterni
-  a pagamento.
+  a pagamento;
+- un nome e un'identità propri, per non girare in locale con marchio e branding di terzi.
 
 ## Cosa è stato modificato rispetto al progetto originale
 
+- **Rebranding completo**: nome cambiato in "Forse", nuovo logo e icone (favicon, PWA, apple
+  touch icon) in tutta l'app, titoli di pagina, manifest PWA e testi "Maybe AI" → "Forse AI".
 - **Localizzazione completa in italiano**: tutte le stringhe dell'interfaccia (viste, email,
   messaggi di validazione, ecc.) tradotte; `Family#locale` vincolato a `it`.
 - **Modello dati adattato al mercato italiano**: nuovi tipi/sottotipi di conto e asset pensati per
@@ -53,7 +60,7 @@ americane. Per usarlo davvero come strumento di finanza personale in Italia serv
 
 ```sh
 git clone <questo-repo>
-cd maybe-personal-app
+cd forse
 cp .env.example .env
 # Compila .env con le tue chiavi (GROQ_API_KEY e/o GEMINI_API_KEY per l'AI, SYNTH_API_KEY per i
 # cambi valuta, ecc. — vedi i commenti nel file)
@@ -71,4 +78,4 @@ Alla prima apertura verrà chiesto di creare l'utente amministratore.
 Come il progetto originale, questo fork è distribuito con licenza
 [AGPLv3](https://github.com/maybe-finance/maybe/blob/main/LICENSE). "Maybe" resta un marchio di
 Maybe Finance, Inc.; questo fork non ne fa uso commerciale né si presenta come prodotto ufficiale
-o affiliato.
+o affiliato — per questo ha un proprio nome ("Forse") e un proprio logo.
