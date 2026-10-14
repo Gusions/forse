@@ -15,8 +15,10 @@ class Provider::Groq < Provider
 
   BASE_URL = "https://api.groq.com/openai/v1/"
 
-  MODELS = %w[llama-3.3-70b-versatile]
-  AUTO_TASK_MODEL = "llama-3.3-70b-versatile"
+  # Groq ha ritirato i modelli Llama; usiamo gpt-oss-120b (modello open-weight di OpenAI
+  # ospitato su Groq), che supporta sia tool calling che structured outputs (json_schema strict).
+  MODELS = %w[openai/gpt-oss-120b]
+  AUTO_TASK_MODEL = "openai/gpt-oss-120b"
 
   # Come per Gemini: 429 (rate limit) o 503 (sovraccarico) sono errori transitori.
   RETRYABLE_STATUSES = [ 429, 503 ].freeze
